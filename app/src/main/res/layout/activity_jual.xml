@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.JualActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/shape_bg_linearlayout_hijau">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/maxresdefault2_min"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape_putih"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.75">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_putih"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:weightSum="0.75"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Beri tahu kami\nMotor yang kamu jual"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/edt_model_motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Model"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#000"/>
+
+            <EditText
+                android:id="@+id/edt_cc_motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kapasitas mesin"
+                android:textColorHint="#000"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"/>
+
+
+            <EditText
+                android:id="@+id/edt_jenis_motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis Motor"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#000"/>
+            <EditText
+                android:id="@+id/edt_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal datang ke toko"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#000"/>
+            <EditText
+                android:id="@+id/edt_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga yang diminta"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:layout_marginBottom="24dp"/>
+            <Button
+                android:id="@+id/btn_daftarkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/shape_hijau_terang"
+                android:text="Daftarkan"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"/>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

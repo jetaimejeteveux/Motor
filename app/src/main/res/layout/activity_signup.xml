@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.SignupActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/shape_bg_linearlayout_hijau">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/maxresdefault2_min"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape_putih"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.75">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_putih"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:weightSum="0.75"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create Account"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="24dp"/>
+            <EditText
+                android:id="@+id/edt_nama_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nama"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#000"/>
+
+            <EditText
+                android:id="@+id/edt_addr_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/alamat"
+                android:textColorHint="#000"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+
+            <EditText
+                android:id="@+id/edt_email_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#000"/>
+            <EditText
+                android:id="@+id/edt_pw_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColorHint="#000"
+                android:inputType="textPassword"
+                android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/edt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColorHint="#000"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_hijau_terang"
+                android:text="@string/sign_up"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"/>
+            <TextView
+                android:id="@+id/tv_punya_akun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah punya akun? Sign in"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

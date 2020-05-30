@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.DetailActivity">
+<ImageView
+    android:id="@+id/iv_motor_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+    android:scaleType="centerCrop"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/iv_motor" />
+
+<TextView
+    android:id="@+id/tv_plat_motor_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="R 6616 WN"
+    android:textColor="#FFF"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_motor_detail" />
+
+<TextView
+    android:id="@+id/tv_jenis_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:fontFamily="@font/montserrat"
+    android:text="Mio"
+    android:textColor="#FFF"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_plat_motor_detail" />
+
+<TextView
+    android:id="@+id/textView13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Kapasitas Mesin"
+    android:textColor="#FFF"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_jenis_detail" />
+
+<TextView
+    android:id="@+id/tv_kapasitas_mesin_detail"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="4dp"
+    android:fontFamily="@font/montserrat"
+    android:text="125 cc"
+    android:textColor="#FFF"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+    <Button
+        android:id="@+id/btn_pilih_bangku"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_green_agak_terang"
+        android:fontFamily="@font/montserrat"
+        android:text="Pesan Sekarang"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/rv_pemilik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+<ImageView
+    android:id="@+id/iv_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/iv_poster"
+    app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+<TextView
+    android:id="@+id/tv_model_detail"
+    android:drawableTop="@drawable/ic_motorcycle_active"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="Matic"
+    android:textColor="#FFF"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_motor_detail" />
+            <TextView
+                android:id="@+id/tv_tahun"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Tahun"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_model_detail" />
+
+            <TextView
+                android:id="@+id/tv_tahun_motor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="2015"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tahun" />
+
+<TextView
+    android:id="@+id/tv_harga"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Harga"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_tahun_motor" />
+
+<TextView
+    android:id="@+id/tv_harga_motor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="4dp"
+    android:text="600000"
+    android:textColor="#FFFFFF"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_harga" />
+
+<TextView
+    android:id="@+id/textView15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Pemilik"
+    android:textColor="#FFF"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_harga_motor" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_pemilik"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

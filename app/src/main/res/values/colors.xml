@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#288061</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBGGelap">#0C2121</color>
+    <color name="colorHijauAgakTerang">#2E6767</color>
+    <color name="colorTerang">#B6CCCC</color>
+    <color name="colorHijauGelap">#224D4D</color>
+
+</resources>
